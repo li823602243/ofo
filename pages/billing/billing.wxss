@@ -1,0 +1,28 @@
+/* pages/billing/billing.wxss */
+.bill-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.bill-passNumber{
+font-size: 100px;
+font-weight: 700
+}
+.bill-tip{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px
+}
+.bill-tip :first-child{
+    margin-bottom: 20px
+}
+.bill-password{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    font-weight: 700
+}
+.bill-tip-text{
+    color: #b9dd09
+}

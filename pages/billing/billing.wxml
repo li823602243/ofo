@@ -1,0 +1,9 @@
+<!--pages/billing/billing.wxml-->
+<view class="bill-content">
+<span class="bill-password">开锁密码</span>
+<span class="bill-passNumber">{{password}}</span>
+<view class="bill-tip">
+<span>请使用密码解锁,{{time}}秒后开始计费</span>
+<span>车辆有问题?<span class="bill-tip-text">回首页申报车辆故障</span></span>
+</view>
+</view>

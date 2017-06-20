@@ -1,0 +1,68 @@
+<view class="content">
+<form bindsubmit="formSubmit">
+  <view class="title-bar">
+  请选择故障类型
+  </view>
+  <view class="warn-center">
+  <checkbox-group bindchange="checkboxChange" name="checkbox">
+  <view class="warn-row">
+    <view class="warn-col" bindchange="checkboxChange">
+     <checkbox value=" 私锁私用 " checked="{{item.checked}}"/>
+     私锁私用 
+    </view>
+     <view class="warn-col" bindchange="checkboxChange">
+      <checkbox value="车牌缺损" checked="{{item.checked}}"/>
+     车牌缺损
+    </view>
+  </view>
+  <view class="warn-row" bindchange="checkboxChange">
+    <view class="warn-col">
+     <checkbox value="轮胎坏了" checked="{{item.checked}}"/>
+     轮胎坏了 
+    </view>
+     <view class="warn-col" bindchange="checkboxChange">
+      <checkbox value="车锁坏了" checked="{{item.checked}}"/>
+     车锁坏了
+    </view>
+  </view>
+  <view class="warn-row">
+    <view class="warn-col" bindchange="checkboxChange">
+     <checkbox value="违规乱停" checked="{{item.checked}}"/>
+     违规乱停
+    </view>
+     <view class="warn-col" bindchange="checkboxChange">
+      <checkbox value=" 密码不对" checked="{{item.checked}}"/>
+     密码不对
+    </view>
+  </view>
+   <view class="warn-row">
+    <view class="warn-col" bindchange="checkboxChange">
+     <checkbox value="刹车坏了" checked="{{item.checked}}"/>
+     刹车坏了
+    </view>
+     <view class="warn-col" bindchange="checkboxChange">
+      <checkbox value="其他原因" checked="{{item.checked}}"/>
+     其他原因
+    </view>
+  </view>
+  </checkbox-group>
+  </view>
+  <view class="title-bar">
+  拍摄单车周围环境，便于维修师傅找车
+  </view>
+  <view class="warn-photo">
+  <image class="warn-avater" src="../../images/photo.png" bindtap="choosePhoto"></image>
+  <li class="warn-avater" wx:for="{{source}}" >
+  <image bindtap="checkPhoto" id="{{index}}" src="{{item}}"  mode="aspecFill" style="width: 70px; height: 70px"/>
+  <image class='warn-avater-childer' src="../../images/cancel.png"/>
+   </li>
+  </view>
+  <view class="warn-input">
+   <input  name="bikeNumber" placeholder="车牌号（车牌损坏不用填写）" /> 
+   <input  name="remark" placeholder="备注" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>
+</view>

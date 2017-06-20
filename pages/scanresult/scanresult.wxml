@@ -1,0 +1,11 @@
+<view class="content">
+<view class="scan-top">当前单车编号：{{number}}</view>
+<view class="scan-content">
+<span class="scan-free">{{scanresult}}</span>
+<span class="scan-time">{{time}}</span>
+</view>
+ <view class="btn-area">
+    <button formType="submit" bindtap="endRide" disabled="{{disabled}}">结束骑行</button>
+    <button formType="submit" bindtap="moveMap">回到地图</button>
+  </view>
+</view>

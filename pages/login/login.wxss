@@ -1,0 +1,74 @@
+/* pages/login/login.wxss */
+.login-avater{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 10px
+}
+.login-logo{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.login-title{
+    font-weight: 500
+}
+.section,.btn-area{
+    margin: 0 auto;
+    width: 80%;
+}
+.btn-area{
+    margin: 25px auto
+}
+.section input{
+    border-bottom: 1px solid #ebebeb;
+    height: 40px
+}
+.login-verify{
+    width: 35%;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #ebebeb
+}
+.login-pass{
+     width: 60%;
+}
+.section-second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+.btn-area button{
+     background-color: #ebebeb
+}
+.section label{
+    font-size: 12px;
+    vertical-align: bottom
+}
+.section .wx-checkbox-input{
+    width: 15px;
+    height: 15px;
+}
+.login-img{
+    height: 25px;
+    width: 25px;
+    vertical-align: middle
+}
+.bottom-bar{
+width: 100%;
+position: fixed;
+bottom: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center
+}
+.login-center{
+    height:25px;
+    border: 1px solid #ebebeb
+}
